@@ -3,6 +3,7 @@ module github.com/IBM/keyprotect-go-client
 go 1.15
 
 require (
+	github.com/IBM/go-sdk-core/v5 v5.17.5 // indirect
 	github.com/google/uuid v1.6.0
 	github.com/hashicorp/go-retryablehttp v0.7.7
 	github.com/stretchr/testify v1.9.0
@@ -10,8 +11,8 @@ require (
 )
 
 retract (
-	v0.11.0 // Contains bugs that break create key
-	v0.12.0 // Contains bugs that break create key
-	v0.12.1 // Contains bugs that break create key
 	v0.12.3 // Contains only retractions
+	v0.12.1 // Contains bugs that break create key
+	v0.12.0 // Contains bugs that break create key
+	v0.11.0 // Contains bugs that break create key
 )
